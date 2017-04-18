@@ -1,0 +1,40 @@
+/*
+==  THEME DETAILS  ============================================================
+
+    Theme Name: R.One Creative Official Theme
+    Theme URI: https://r1creative.net
+    Description: A Responsive WordPress Blog and Portfolio Theme
+    Version: 3.0
+    Author: Mohammad
+    Author URI: https://r1creative.net
+    License: GNU General Public License version 3.0
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+===============================================================================
+*/
+
+/* =====================================
+IMPORTS
+===================================== */
+
+/* Modules */
+@import 'asset/css/bootstrap.min.css';
+@import 'asset/css/font-awesome.min.css';
+@import 'asset/css/flexslider.css';
+@import 'asset/css/owl.carousel.css';
+@import 'asset/css/animate.css';
+
+
+/* Helpers */
+@import 'asset/css/fonts.css';
+@import 'asset/css/helper.css';
+@import 'asset/css/plugins.css';
+@import 'asset/css/old-code.css';
+
+/* Skin */
+@import 'asset/css/skin.css';
+/*@import 'asset/css/responsive.css';*/
+
+/* ===================================
+CUSTOM STYLES SHOULD GO HERE
+====================================*/
