@@ -1493,17 +1493,36 @@ a.rc-intro-social__link{
 }
 .o-wrapper--rc-service-inner{
   max-width: 1050px;
+  position: relative;
 }
 .rc-service-inner--two{
   background: #f0f4f5;
 }
-
-
 .rc-service-inner__text{
   font-size: 20px;
   line-height: 26px;
   font-family: 'proxima_novalight';
   color: #16151a;
+}
+.rc-service-inner__text-wrap {
+  position: relative;
+}
+.rc-service-inner__text-wrap .rc-service-inner__text{
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 400px;
+  text-align: right;
+}
+.rc-service-inner__text-wrap:last-child {
+  margin-top: 90px;
+}
+.rc-service-inner__text-wrap:last-child .rc-service-inner__text{
+  position: absolute;
+  left: 0;
+  top: -170px;
+  max-width: 350px;
+  text-align: left;
 }
 .rc-service-inner__text a{
   color: #fb6a0f;
