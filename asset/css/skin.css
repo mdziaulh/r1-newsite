@@ -1638,19 +1638,25 @@ a.c-intro-feed__link{
   padding-top: 65px;
   padding-bottom: 65px;
 }
+.o-panel--feed-inner-bottom{
+  background: #fff;
+   padding-top: 60px;
+  padding-bottom: 65px;
+}
 @media screen and (max-width: 768px) {
-  .o-panel--feed-contents{
+  .o-panel--feed-contents,
+  .o-panel--feed-inner-bottom{
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 640px) {
-  .o-panel--feed-contents{
+  .o-panel--feed-contents,
+  .o-panel--feed-inner-bottom{
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
-
 
 .rc-feed{
   display: -webkit-flex;
@@ -1820,6 +1826,14 @@ a.c-intro-feed__link{
     float: none;
   }
 }
+.rc-small-feed--inner__title{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #c4cbcc;
+  font-family: 'proxima_nova_rgbold';
+  text-align: center;
+  letter-spacing: 2px;
+}
 .rc-feed__col-wrap{
   position: relative;
 }
@@ -1946,6 +1960,20 @@ a.rc-feed-nner__back-feed{
     position: static;
     max-width: 100%;
     margin-bottom: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px){
+  .rc-intro-social-inner__text {
+    padding-right: 10px;
   }
 }
 .rc-intro-social-inner__text {
@@ -2010,6 +2038,12 @@ a.rc-intro-social-inner__link {
 .rc-feed-nner__header-wrp{
   padding-left: 90px;
 }
+@media screen and (max-width: 768px) {
+  .rc-feed-nner__header-wrp{
+    padding-left: 70px;
+  }
+}
+
 .rc-feed-inner__text{
   margin-top: 40px;
   font-size: 20px;
@@ -2025,6 +2059,11 @@ a.rc-intro-social-inner__link {
     line-height: 22px;
   }
 }
+@media screen and (max-width: 768px) {
+  .rc-feed-inner__text{
+    padding-left: 70px;
+  }
+}
 @media screen and (max-width: 480px) {
   .rc-feed-inner__text,.rc-feed-nner__header-wrp{
     padding-left: 0;
@@ -2038,11 +2077,34 @@ a.rc-intro-social-inner__link {
   font-family: 'proxima_nova_rgbold';
   color: #fb6a0f;
 }
+.rc-feed-inner__text a:hover{
+  color: #fff;
+}
 .rc-feed-inner__text .alignleft{
   float: left;
   padding-right: 35px;
   margin-right: 0;
 }
+@media screen and (max-width: 980px) {
+  .rc-feed-inner__text .alignleft{
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rc-feed-inner__text .alignleft{
+    max-width: 300px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .rc-feed-inner__text .alignleft{
+    max-width: 400px;
+    float: none;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+}
+
 .rc-feed-inner__text .wp-caption-text{
   font-size: 16px;
   font-family: 'proxima_novalight';
@@ -2268,6 +2330,34 @@ a.rc-intro-social-inner__link {
   justify-content: center;
   width: 52%;
 }
+
+.rc-subscribe-form--bottom-inner{
+  max-width: 950px;
+  margin: 0 auto;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.rc-subscribe-form--bottom__title{
+  font-size: 70px;
+  color: #fb6a0f;
+  font-family: 'ff-good-headline-web-pro-con';
+  padding: 0 40px 0 0;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .rc-subscribe-form--bottom__title{
+    font-size: 50px;
+    padding: 0 20px 0 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .rc-subscribe-form--bottom__title{
+    padding: 0 0 20px 0;
+    text-align: center;
+  }
+}
+
 .rc-subscribe-form--bottom form{
   max-width: 680px;
   width: 100%;
@@ -2298,7 +2388,10 @@ a.rc-intro-social-inner__link {
   font-style: italic;
   width: 100%;
 }
-
+.rc-subscribe-form--bottom-inner input[type='text'],
+.rc-subscribe-form--bottom-inner input[type='email']{
+  background: #f0f4f5;
+}
 .rc-subscribe-form .gform_footer{
   padding-top: 0;
   padding-top: 0;
@@ -2323,13 +2416,13 @@ a.rc-intro-social-inner__link {
     outline: none;
     width: 100%;
     font-family: 'ff-good-headline-web-pro-con';
-
-    &:hover{
-      color: #496149;
-      border-color: #496149;
-      background: transparent;
-    }
 }
+.rc-subscribe-form input[type="submit"]:hover{
+  color: #fb6a0f;
+  border-color: #fb6a0f;
+  background: #fff;
+}
+
 
 .rc-subscribe-form .validation_error{
     margin-bottom: 10px;
