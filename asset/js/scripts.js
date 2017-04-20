@@ -40,6 +40,45 @@ jQuery(document).ready(function($){
         directionNav: true
     });
 
+    jQuery('.rc-related-projects__carousel').owlCarousel({
+        items:4,
+        loop:true,
+        autoplay:true,
+        autoHeight: true,
+        nav:true,
+        navText: [ ],
+        margin: 0,
+        autoplaySpeed: 600,
+        autoplayHoverPause: false,
+        autoplayTimeout: 3000,
+        margin: 0,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            640:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+
+    jQuery('.rc-feed-inner__image').flexslider({
+        animation: "slide",
+        prevText: "",
+        nextText: "",
+        controlNav: true,
+        animationSpeed: 600,
+        slideshowSpeed: 4000,
+        smoothHeight: true,
+        directionNav: false
+    });
 
 /*==================================
     Scrolling...
