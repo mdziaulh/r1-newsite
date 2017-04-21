@@ -73,22 +73,86 @@
 		</div>
 	</section><!--// End what-we-are Panel -->
 
-	<section id="portfolio-panel" class="o-panel o-panel--portfolio"><!-- Start Portfolio Panel -->
-		<div class="o-wrapper o-wrapper--portfolio">
-			<div class="c-portfolio">
-				<ul>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-					<li><img src="asset/images/port-1.jpg" alt=""></li>
-				</ul>
-			</div>
+	<section id="rc-portfolio" class="o-panel o-panel--rc-portfolio"><!-- Start Service Icon -->
+		<div class="o-wrapper o-wrapper--rc-portfolio">
+			<div id="module-isotope" class="module-isotope rc-portfolio"><!-- Start Module Isotope -->
+				<div class="rc-portfolio__nav text-center">
+					<a class="rc-portfolio__nav-item" href="#" data-filter="*" class="current">All</a>/
+					<a class="rc-portfolio__nav-item" href="#" data-filter=".branding">BRANDING</a>/
+					<a class="rc-portfolio__nav-item" href="#" data-filter=".web-design">WEB DESIGN</a>/
+					<a class="rc-portfolio__nav-item" href="#" data-filter=".press-kits">PRESS KITS</a>/
+					<a class="rc-portfolio__nav-item" href="#" data-filter=".flyers">FLYERS</a>
+					<a class="rc-portfolio__nav-item" href="#" data-filter=".motion-graphics">MOTION GRAPHICS</a>
+					<a class="rc-portfolio__nav-item" href="#" data-filter=".3d-modelling">3D MODELLING</a>
+				</div>
+				<div id="isotope-items" class="isotope-items rc-portfolio__items">
+					<div class="isotope-item rc-portfolio__item flyers">
+						<img src="asset/images/service-img1.jpg" alt="image">
+					</div>
+					
+					<div class="isotope-item rc-portfolio__item branding web-design">
+						<img src="asset/images/service-img2.jpg" alt="image">
+					</div>	
+				
+					<div class="isotope-item rc-portfolio__item press-kits">
+						<img src="asset/images/service-img3.jpg" alt="image">
+					</div>
+					<div class="isotope-item rc-portfolio__item branding">
+						<img src="asset/images/service-img4.jpg" alt="image">
+					</div>
+					
+					<div class="isotope-item rc-portfolio__item branding web-design">
+						<img src="asset/images/service-img5.jpg" alt="image">
+					</div>	
+				
+					<div class="isotope-item rc-portfolio__item press-kits web-design">
+						<img src="asset/images/service-img6.jpg" alt="image">
+					</div>
+					<div class="isotope-item web-design flyers motion-graphics">
+						<img src="asset/images/service-img7.jpg" alt="image">
+					</div>
+					
+					<div class="isotope-item rc-portfolio__item branding web-design 3d-modelling">
+						<img src="asset/images/service-img8.jpg" alt="image">
+					</div>	
+				</div>
+			</div><!-- End Module Isotope -->
 		</div>
-	</section><!--// End Portfolio Panel -->
+	</section><!--// End Service Icon -->
+
+	<section id="work-intro" class="o-panel o-panel--work-intro"><!--  Start Intro Title -->
+		<div class="c-work-intro clearfix">
+			<div class="c-work-intro__col c-work-intro__left clearfix">
+				<div class="c-work-intro__text c-work-details">
+					<h2 class="c-work-details__title">Featured Case Study</h2>
+
+					<div class="c-work-details__name-area">
+						<span class="c-work-details__name">Branding Design:<br/> J Espinosa</span>
+						<span class="c-work-details__category">BRANDING</span>
+					</div>
+					<a class="u-more-button u-more-button--black c-work-intro__more" href="#">VIEW MORE WORK</a>
+				</div>
+			</div><!--// Left -->
+
+			<div class="c-work-intro__col c-work-intro__right c-work-intro__right--home clearfix">
+				<div class="c-work-intro__text c-about-work">
+					<div class="c-about-work__slider">
+						<ul class="slides">
+							<li><img src="asset/images/work-intro-img.jpg" alt=""></li>
+							<li><img src="asset/images/work-intro-img.jpg" alt=""></li>
+						</ul>
+					</div>
+					<div class="c-about-work__description">
+						<h2 class="c-about-work__title">Champion design for a champion brand.</h2>
+						<p>We’ve worked closely with J Espinosa over the last 4 years, creating alll of his marketing and branding materials from mixtape covers to his signature logo, to his brand spaking new website.</p>
+
+						<p>When we met J he was a full-time mixshow DJ who played local Bay Area nightclubs, and we are proud to see his brand and skills have now earned him the title of <strong class="u-strong">2015 Red Bull Thre3Style US Champion.</strong></p>
+						<a class="u-more-button" href="#">READ MORE</a>
+					</div>
+				</div>
+			</div><!--// Right -->
+		</div>
+	</section><!--// End Intro Title -->
 
 	<section id="testimonial-panel" class="o-panel o-panel--testimonial"><!-- Start Testimonial Panel -->
 		<div class="o-wrapper o-wrapper--testimonial">
@@ -163,7 +227,7 @@
 	<section id="our-clients-panel" class="o-panel o-panel--our-clients"><!-- Start Our Clients Panel -->
 		<div class="o-wrapper o-wrapper--our-clients">
 			<div class="c-our-clients">
-				<h1 class="u-section-title u-section-title--our-clients">Our Clients</h1>
+				<h4 class="c-our-clients__title">SOME OF OUR FRIENDS</h4>
 				<ul class="c-our-clients__logos">
 					<li class="c-our-clients__logo-item"><img src="asset/images/client-logo10.png"></li>
 					<li class="c-our-clients__logo-item"><img src="asset/images/client-logo9.png"></li>
@@ -234,7 +298,6 @@
 		</div>
 	</section><!--// End Footer Panel -->
 		
-
 	<script type='text/javascript' src='asset/js/jquery.js'></script>
 	<script type='text/javascript' src='asset/js/appear.js'></script>
 	<script type='text/javascript' src='asset/js/bootstrap.js'></script>
@@ -243,6 +306,7 @@
 	<script type='text/javascript' src='asset/js/imagesloaded.pkgd.min.js'></script>
 	<script type='text/javascript' src='asset/js/owl.carousel.js'></script>
 	<script type='text/javascript' src='asset/js/masonry.pkgd.min.js'></script>
+	<script type='text/javascript' src='asset/js/isotope.pkgd.min.js'></script>
 	<script type='text/javascript' src='asset/js/niceScroll.js'></script>
 	<script type='text/javascript' src='asset/js/animat.data.js'></script>
 	<script type='text/javascript' src='asset/js/defaults.js'></script>

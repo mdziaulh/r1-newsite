@@ -507,8 +507,8 @@ a.c-what-we-are__link{
 }
 
 .o-panel--testimonial{
-  background: #dbe1e2 url(../images/testimonial-quate.png) no-repeat 10px center;
-  padding-top: 100px;
+  background: #dbe1e2 url(../images/testimonial-quate.png) no-repeat 10px 40px;
+  padding-top: 165px;
   padding-bottom: 90px;
 }
 @media screen and (min-width: 1400px){
@@ -518,13 +518,13 @@ a.c-what-we-are__link{
 }
 @media screen and (max-width: 1024px){
   .o-panel--testimonial{
-    padding-top: 80px;
+    padding-top: 140px;
     padding-bottom: 70px;
   }
 }
 @media screen and (max-width: 768px){
   .o-panel--testimonial{
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 40px;
   }
 }
@@ -627,6 +627,25 @@ a.c-what-we-are__link{
     padding-bottom: 20px;
   }
 }
+.c-our-clients{
+  position: relative;
+  padding-left: 60px;
+}
+.c-our-clients__title{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'proxima_nova_rgbold';
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dbe1e2;
+  color: #dbe1e2;
+  position: absolute;
+  left: -100px;
+  top: 45%;
+  padding: 0 15px 25px;
+  transform: rotate(-90deg);
+  letter-spacing: 3px;
+}
 .c-our-clients__logos{
   margin: 0;
   padding: 0;
@@ -636,8 +655,8 @@ a.c-what-we-are__link{
   list-style: none;
   display: inline-block;
   width: 19.5%;
-    margin-left: -1px;
-        padding: 30px 1%;
+  margin-left: -1px;
+  padding: 25px 1%;
 }
 
 @media screen and (max-width: 768px){
@@ -782,7 +801,7 @@ a.c-intro-title__arrow{
 @media screen and (max-width: 980px) {
   .c-intro-title__text{
     font-size: 22px;
-    line-height: 28px;
+    line-height: 26px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1071,6 +1090,19 @@ a.c-service-items__more{
     width: 100%;
   }
 }
+a.c-work-intro__more{
+  margin-top: 40px;
+  padding: 13px 40px 15px 40px;
+}
+@media (max-width: 768px){
+  a.c-work-intro__more{
+    margin-top: 30px;
+    padding: 13px 25px 15px 25px;
+  }
+}
+.c-work-intro__more:after{
+  display: none;
+}
 .c-work-details{
   float: right;
   max-width: 470px;
@@ -1098,6 +1130,10 @@ a.c-service-items__more{
   border-radius: 0 0 0 100px;
   position: relative;
 }
+.c-work-intro__right--home{
+  margin-bottom: -75px;
+  z-index: 1;
+}
 @media (max-width: 980px){
   .c-work-intro__right {
     padding-left: 20px;
@@ -1109,6 +1145,10 @@ a.c-service-items__more{
     width: 100%;
     padding-left: 20px;
     position: static;
+  }
+  .c-work-intro__right--home{
+    margin-bottom: -35px;
+    position: relative;
   }
 }
 .c-work-intro__heading{
@@ -1335,6 +1375,7 @@ a.rc-portfolio__nav-item {
   color: #1c1b21;
 }
 
+.rc-portfolio__nav-item:hover, 
 a.rc-portfolio__nav-item.current { 
   color: #fb6a0f;
 }
